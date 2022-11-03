@@ -49,15 +49,15 @@ export class UsuarioController {
     })
     usuario: Omit<Usuario, 'id'>,
   ): Promise<Usuario> {
-    let clave = this.servicioAutenticacion.GenerarClave();
-    let claveCifrada = this.servicioAutenticacion.CifrarClave(clave);
+    const clave = this.servicioAutenticacion.generarClave();
+    const claveCifrada = this.servicioAutenticacion.cifrarClave(clave);
     usuario.contrasena=claveCifrada;
-    let u = await this.usuarioRepository.create(usuario);
+    const u = await this.usuarioRepository.create(usuario);
     
     //Enviar correo al usuario
-    let destino = usuario.correo;
-    let asunto = 'Bienvenido y credenciales de acceso a la plataforma';
-    let contenido = `Hola ${usuario.nombre}, su usuario es ${usuario.correo} y la contrasena es ${clave}`;
+    const destino = usuario.correo;
+    const asunto = 'Bienvenido y credenciales de acceso a la plataforma';
+    const contenido = `Hola ${usuario.nombre}, su usuario es ${usuario.correo} y la contrasena es ${clave}`;
     fetch(`http://127.0.0.1:5000/email?correo_destino=${destino}&asunto=${asunto}&contenido=${contenido}`)
       .then((data:any)=>{
         console.log(data);
