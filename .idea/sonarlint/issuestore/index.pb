@@ -5,8 +5,6 @@ Z
 ,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
 U
 %loopback/BackendMascotas/package.json,9/3/9303b945c51fe6e1c4227e2ad9565d8cbaa182aa
-n
->loopback/BackendMascotas/src/datasources/mongodb.datasource.ts,c/5/c597b23b0f817c788174e10b0e27313621712a25
 ^
 .loopback/BackendMascotas/src/services/index.ts,c/3/c3acf03ab8b3682fc9f8c3ad429601729ecb0180
 b
@@ -15,7 +13,3 @@ o
 ?loopback/BackendMascotas/src/controllers/sucursal.controller.ts,8/1/812ed76724f8ace68e332c9859e6dc71fe1f32fa
 m
 =loopback/BackendMascotas/src/services/notification.service.ts,f/e/fed58129c7dfca3bbe7e9f462d7fb7af183a85f8
-d
-4loopback/BackendMascotas/src/models/usuario.model.ts,7/8/78eb48e9777af868c5cc3b4532e3c74307aba32b
-n
->loopback/BackendMascotas/src/services/autenticacion.service.ts,a/d/adfa02f116c13af5f02bc1388705619be379a88e

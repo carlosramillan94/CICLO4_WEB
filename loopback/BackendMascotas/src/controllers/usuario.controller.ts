@@ -49,7 +49,7 @@ export class UsuarioController {
     })
     usuario: Omit<Usuario, 'id'>,
   ): Promise<Usuario> {
-    let clave = this.servicioAutenticacion.GenerarClave.toString();
+    let clave = this.servicioAutenticacion.GenerarClave();
     let claveCifrada = this.servicioAutenticacion.CifrarClave(clave);
     usuario.contrasena=claveCifrada;
     let u = await this.usuarioRepository.create(usuario);

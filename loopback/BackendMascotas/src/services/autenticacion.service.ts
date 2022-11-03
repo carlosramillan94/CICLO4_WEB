@@ -10,12 +10,12 @@ export class AutenticacionService {
    */
 
   GenerarClave(){
-    var clave = generador(8, false);
+    let clave = generador(8,false);
     return clave;
   }
 
-  CifrarClave(clave:string){
-    let claveCifrada = cryptoJS.MD5(clave).toString();
+    CifrarClave(clave: string){
+    let claveCifrada = cryptoJS.MD5(clave);
     return claveCifrada;
   }
 }
