@@ -29,7 +29,7 @@ let cedula = document.querySelector("#txtCedula").nodeValue;
 let correo = document.querySelector("#txtCorreo").nodeValue;
 let telefono = document.querySelector("#txtTelefono").nodeValue;
 
-let url ="http://localhost:3000/personas";
+let url ="http://localhost:3000/usuarios";
 let datos = {
     nombres: nombres,
     apellidos: apellidos,
