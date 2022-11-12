@@ -31,8 +31,8 @@ let telefono = document.querySelector("#txtTelefono").nodeValue;
 
 let url ="http://localhost:3000/usuarios";
 let datos = {
-    nombres: nombres,
-    apellidos: apellidos,
+    nombre: nombres,
+    apellido: apellidos,
     cedula: cedula,
     correo: correo,
     telefono: telefono
