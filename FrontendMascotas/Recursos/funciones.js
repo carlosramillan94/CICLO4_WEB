@@ -39,7 +39,7 @@ let datos = {
 };
 fetch(url,{
     method: 'POST',
-    body: datos,
+    body: JSON.stringify(datos),
     headers:{
         'Content-Type': 'application/json'
     }
