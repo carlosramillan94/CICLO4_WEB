@@ -23,19 +23,21 @@
   })()
 
 function RegistrarPersona(){
-let nombres = document.querySelector("#txtNombres").nodeValue;
-let apellidos = document.querySelector("#txtApellidos").nodeValue;
-let cedula = document.querySelector("#txtCedula").nodeValue;
-let correo = document.querySelector("#txtCorreo").nodeValue;
-let telefono = document.querySelector("#txtTelefono").nodeValue;
+let Nombres = document.querySelector("#txtNombres").nodeValue;
+let Apellidos = document.querySelector("#txtApellidos").nodeValue;
+let Cedula = document.querySelector("#txtCedula").nodeValue;
+let Correo = document.querySelector("#txtCorreo").nodeValue;
+let Telefono = document.querySelector("#txtTelefono").nodeValue;
+let Rol = "usuario";
 
 let url ="http://localhost:3000/usuarios";
 let datos = {
-    nombre: nombres,
-    apellido: apellidos,
-    cedula: cedula,
-    correo: correo,
-    telefono: telefono
+    cedula: Cedula,
+    nombre: Nombres,
+    apellido: Apellidos,
+    correo: Correo,
+    telefono: Telefono,
+    rol: Rol
 };
 fetch(url,{
     method: 'POST',
